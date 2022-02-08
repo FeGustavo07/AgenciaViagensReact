@@ -1,0 +1,144 @@
+.area-informacoes {
+    width: 100%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    padding: 0;
+    margin: 0;
+}
+
+.descricao:nth-child(1) {
+    background-color: #1F1F22;
+    grid-column: 1 / -1;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 300px;
+    background: linear-gradient(45deg, #469d89 40%, #14746f);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.089);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.selo {
+    width: 200px;
+    height: 200px;
+    background-color: #036666;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    border-radius: 100px;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selo:hover .numero {
+    color: rgba(0, 0, 0, 0.473);
+}
+
+.numero {
+    color: rgba(211, 211, 211, 0.452);
+    font-size: 8em;
+    
+}
+
+.titulos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo--primeiro {
+    margin-left: 35px;
+    font-weight: 900;
+    color: #1F1F22;
+}
+
+.titulo--segundo {
+    margin-right: 90px;
+    font-weight: 900;
+    color: #1F1F22;
+}
+
+.descricao:nth-child(2) {
+    background-color: #1F1F22;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    text-align: center;
+}
+
+.descricao:nth-child(3) {
+    background-color: #1F1F22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-left: 20px;
+}
+
+.cliente-svg {
+    width: 60%;
+    opacity: 0.7;
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .selo {
+        opacity: 0.3;
+    }
+    .area-informacoes {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0;
+        margin: 0;
+    }
+    .descricao:nth-child(1) {
+        grid-row: 1 / 2;
+        
+    }
+    .descricao:nth-child(2) {
+        grid-row: 2 / 3;
+    }
+    .descricao:nth-child(3) {
+        grid-row: 3 / 4;
+    }
+}
+
+@media (max-width: 450px) {
+    .titulo--primeiro,
+    .titulo--segundo {
+        margin: 0;
+    }
+}
+
+

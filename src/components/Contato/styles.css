@@ -1,0 +1,120 @@
+.body-contato {
+    width: 100%;
+    background-color: white;
+}
+
+.view-area {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+    padding: 70px;
+    width: 900px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+div.input-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 8%;
+}
+
+input.format-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 45%;
+    height: 80%;
+    font: normal 1em Arial;
+}
+
+textarea {
+    margin-top: 5%;
+    width: 100%;
+}
+
+
+.sweep-to-right {
+    bottom: 20px;
+    width: 200px;
+    height: 50px;
+    border: solid 1px black;
+    background-color: #1F1F22;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: absolute;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgrey;
+    border-radius: 10px;
+  }
+
+  .sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #036666;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-radius: 10px;
+  }
+
+  .sweep-to-right:hover, .sweep-to-right:focus, .sweep-to-right:active {
+    color: black;
+    border: none;
+  }
+
+  .sweep-to-right:hover:before, .sweep-to-right:focus:before, .sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  @media (max-width: 900px) {
+    form {
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 400px) {
+    div.input-area  {
+      flex-direction: column;
+      height: 80px;
+    }
+    input.format-input {
+      width: 100%;
+    }
+  }
