@@ -1,6 +1,5 @@
 .body-contato {
     width: 100%;
-    background-color: white;
 }
 
 .view-area {
@@ -11,7 +10,7 @@
   align-items: center;
 }
 
-form {
+form.form-contato {
     padding: 70px;
     width: 900px;
     height: inherit;
@@ -40,11 +39,13 @@ input.format-input {
     width: 45%;
     height: 80%;
     font: normal 1em Arial;
+    background-color: transparent;
 }
 
 textarea {
     margin-top: 5%;
     width: 100%;
+    background-color: transparent;
 }
 
 
@@ -52,8 +53,8 @@ textarea {
     bottom: 20px;
     width: 200px;
     height: 50px;
-    border: solid 1px black;
-    background-color: #1F1F22;
+    border: none;
+    background-color: #457b9d;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -62,11 +63,11 @@ textarea {
     position: absolute;
     -webkit-transition-property: color;
     transition-property: color;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    font-size: 30px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color: lightgrey;
+    color: black;
     border-radius: 10px;
   }
 
@@ -78,22 +79,22 @@ textarea {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #036666;
+    background: #457b9d52;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
     -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     border-radius: 10px;
   }
 
   .sweep-to-right:hover, .sweep-to-right:focus, .sweep-to-right:active {
-    color: black;
+    color: white;
     border: none;
   }
 

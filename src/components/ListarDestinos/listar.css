@@ -1,0 +1,28 @@
+.tabela--destinos {
+    margin-top: 20px;
+    width: 1200px;
+    table-layout: fixed;
+}
+
+tr {
+    overflow: hidden;
+}
+
+th {
+    border: solid 1px black;
+    width: 25%;
+    text-align: center;
+    overflow: hidden;
+}
+
+td {
+    padding: 0px 20px;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    overflow: hidden;
+}
+
+.linkImagem--th {
+    overflow: auto;
+}

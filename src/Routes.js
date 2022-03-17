@@ -1,11 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import HomePage from "./components/HomePage"
-import Destinos from "./components/Destinos"
-import Promocoes from "./components/Promocoes"
-import Contato from "./components/Contato"
-import ErrorPage from './components/ErrorPage';
+import HomePage from "./pages/HomePage"
+import Destinos from "./pages/Destinos"
+import Promocoes from "./pages/Promocoes"
+import Contato from "./pages/Contato"
+import CadastroDestino from "./pages/GerenciarDestino"
+import ErrorPage from './components/ErrorPage'
 
 export default () => {
     return(
@@ -15,6 +16,7 @@ export default () => {
             <Route path="/destinos" element={ <Destinos /> }/>
             <Route path="/promocoes" element={ <Promocoes /> }/>
             <Route path="/Contato" element={ <Contato /> }/>
+            <Route path="/destinos/gerenciar" element={ <CadastroDestino /> }/>
             <Route path="*" element={ <ErrorPage /> }/>
         </Routes>
 

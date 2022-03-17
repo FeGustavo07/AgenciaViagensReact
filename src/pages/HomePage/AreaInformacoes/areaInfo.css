@@ -9,25 +9,36 @@
 }
 
 .descricao:nth-child(1) {
-    background-color: #1F1F22;
+    background-color: #457b9d;
     grid-column: 1 / -1;
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+.descricao:nth-child(2) {
+    background-color: #457b9d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
     justify-content: center;
     align-items: center;
 }
 
+
 .card {
-    margin: 0;
     padding: 0;
-    width: 800px;
-    height: 300px;
-    background: linear-gradient(45deg, #469d89 40%, #14746f);
+    width: 580px;
+    height: 250px;
+    background: linear-gradient(45deg, gray 40%, white);
     border-radius: 10px;
     border: none;
     box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.089);
-    position: relative;
     display: flex;
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
@@ -36,7 +47,7 @@
 .selo {
     width: 200px;
     height: 200px;
-    background-color: #036666;
+    background-color: #1F1F22;
     position: absolute;
     top: calc(50% - 100px);
     left: calc(50% - 100px);
@@ -57,52 +68,30 @@
     
 }
 
-.titulos {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.titulo--primeiro {
-    margin-left: 35px;
-    font-weight: 900;
-    color: #1F1F22;
-}
-
-.titulo--segundo {
-    margin-right: 90px;
-    font-weight: 900;
-    color: #1F1F22;
-}
-
-.descricao:nth-child(2) {
-    background-color: #1F1F22;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    justify-content: center;
-    text-align: center;
-}
-
 .descricao:nth-child(3) {
-    background-color: #1F1F22;
+    background-color: #457b9d;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h2 {
+.title-infoArea {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 30px 0px;
+    font-size: 2.5em;
 }
 
 p {
-    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 0px 100px;
+    text-align: justify;
+    margin-bottom: 5px;
 }
 
 .cliente-svg {
-    width: 50%;
+    width: 60%;
     opacity: 0.7;
 }
 

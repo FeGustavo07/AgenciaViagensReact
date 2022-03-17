@@ -12,8 +12,8 @@ export default ({path, valor, titulo}) => {
                 <h3>{titulo}</h3>
                 <span>R${valor}</span>
                 <div className="button-area">
-                    <button>Ver detalhes</button>
-                    <button>Comprar</button>
+                    <button>VER DETALHES</button>
+                    <button>COMPRAR</button>
                 </div>
             </div>
         </article>
