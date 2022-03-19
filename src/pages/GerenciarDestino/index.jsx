@@ -12,8 +12,11 @@ function CadastroDestino() {
 
   return (
 
-    isAuthenticated && user.sub == "google-oauth2|102126342599734069744" && (
+    isAuthenticated &&  (
       <div className='body-gerenciamentoDestino'>
+        {
+          user.sub
+        }
         <Cadastrar />
         <Atualizar />
         <Deletar />
