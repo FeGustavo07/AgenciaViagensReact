@@ -1,7 +1,7 @@
 .tabela--destinos {
     margin-top: 20px;
-    width: 1200px;
-    table-layout: fixed;
+    width: 400px;
+    margin-bottom: 25px;
 }
 
 tr {
@@ -23,6 +23,9 @@ td {
     overflow: hidden;
 }
 
-.linkImagem--th {
-    overflow: auto;
+
+@media (max-width: 405px) {
+    .tabela--destinos {
+        width: 100%;
+    }
 }

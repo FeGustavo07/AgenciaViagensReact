@@ -177,3 +177,11 @@
     }
 }
 
+@media (max-height: 600px) {
+    .sub-title {
+        display: none;
+    }
+    .animation--btn {
+        top: 68vh;
+    }
+}

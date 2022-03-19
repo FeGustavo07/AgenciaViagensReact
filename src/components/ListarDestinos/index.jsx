@@ -23,16 +23,10 @@ export default () => {
                     <tr>
                         <th>ID</th>
                         <th>NOME</th>
-                        <th>PREÇO</th>
-                        <th>DESCRIÇÃO</th>
-                        <th className='linkImagem--th'>LINK DA IMAGEM</th>
                     </tr>
                     <tr key={destino.id}>
                         <td>{destino.id}</td>
                         <td>{destino.nome}</td>
-                        <td>{destino.preco}</td>
-                        <td>{destino.descricao}</td>
-                        <td>{destino.linkImagem}</td>
                     </tr>
                 </table>
 

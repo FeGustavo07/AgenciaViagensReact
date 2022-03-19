@@ -29,17 +29,6 @@ function index({ref}) {
                Valores:  honestidade, respeito e dedicação.
             </p>
         </section>
-        <section className='descricao'>
-            <h2 className='title-infoArea'>Empresa Número 1 Do Mercado </h2>
-            <div className='card'>
-                <div className='selo'>
-                    <span className='numero'>1</span>
-                </div>
-            </div>
-        </section>
-        <section className='descricao'>
-            <img src={cliente} className='cliente-svg'/>
-        </section>
     </div>
   )
 }

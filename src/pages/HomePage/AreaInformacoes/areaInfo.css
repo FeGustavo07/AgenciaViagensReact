@@ -1,77 +1,17 @@
 .area-informacoes {
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
     padding: 0;
     margin: 0;
 }
 
-.descricao:nth-child(1) {
+.descricao {
     background-color: #457b9d;
-    grid-column: 1 / -1;
-    padding: 0;
+    padding: 20px 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     color: white;
-}
-
-
-.descricao:nth-child(2) {
-    background-color: #457b9d;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.card {
-    padding: 0;
-    width: 580px;
-    height: 250px;
-    background: linear-gradient(45deg, gray 40%, white);
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.089);
-    display: flex;
-    justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.selo {
-    width: 200px;
-    height: 200px;
-    background-color: #1F1F22;
-    position: absolute;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
-    border-radius: 100px;
-    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.322);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.selo:hover .numero {
-    color: rgba(0, 0, 0, 0.473);
-}
-
-.numero {
-    color: rgba(211, 211, 211, 0.452);
-    font-size: 8em;
-    
-}
-
-.descricao:nth-child(3) {
-    background-color: #457b9d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .title-infoArea {
@@ -89,44 +29,20 @@
     margin-bottom: 5px;
 }
 
-.cliente-svg {
-    width: 60%;
-    opacity: 0.7;
-}
 
-@media (max-width: 800px) {
-    .card {
-        width: 100%;
-    }
-}
+
+
 
 @media (max-width: 700px) {
-    .selo {
-        opacity: 0.3;
-    }
     .area-informacoes {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
         padding: 0;
         margin: 0;
     }
-    .descricao:nth-child(1) {
-        grid-row: 1 / 2;
-        
-    }
-    .descricao:nth-child(2) {
-        grid-row: 2 / 3;
-    }
-    .descricao:nth-child(3) {
-        grid-row: 3 / 4;
-    }
     .desc--empresa {
         margin: 5px 20px;
     }
-}
-
-@media (max-width: 450px) {
-   
 }
 
 
