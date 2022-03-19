@@ -162,7 +162,7 @@ export default () => {
               </li>
 
               {isAuthenticated &&
-                user.sub == "google-oauth2|102126342599734069744" && (
+                user.sub == "auth0|62353f5cb70c270068dd5467" && (
                   <li className="nav-item">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

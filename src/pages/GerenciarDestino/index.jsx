@@ -12,11 +12,8 @@ function CadastroDestino() {
 
   return (
 
-    isAuthenticated &&  (
+    isAuthenticated && user.sub == "auth0|62353f5cb70c270068dd5467" && (
       <div className='body-gerenciamentoDestino'>
-        {
-          user.sub
-        }
         <Cadastrar />
         <Atualizar />
         <Deletar />
