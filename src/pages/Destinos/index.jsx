@@ -24,7 +24,7 @@ export default () => {
             <section className="cards-destinos">
                 {
                     destinos?.map((destino) => (
-                        <Card path={"https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2021/09/turismo-1280x720.jpeg"} valor={destino.preco} titulo={destino.nome} key={destino.id} />
+                        <Card path={destino.linkImagem} valor={destino.preco} titulo={destino.nome} key={destino.id} />
                     ))
                 }
             </section>
