@@ -2,10 +2,6 @@ import React, { useRef } from "react";
 import './home.css'
 import AreaInformacoes from './AreaInformacoes'
 import Footer from "../../components/Footer";
-import undraw from '../../assets/undraw.svg'
-import plane from '../../assets/plane.png'
-
-
 
 export default () => {
     const commentSection = useRef()

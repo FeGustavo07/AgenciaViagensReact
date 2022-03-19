@@ -23,7 +23,7 @@ function enviarDestino(event) {
 
 
   return (
-    <div>
+    <div className='body-form'>
         <h2>Cadastrar Destino</h2>
         <form action='post' onSubmit={enviarDestino} className='form-gerenciamento'>
             <input type="text" placeholder='Nome' ref={nome} required />

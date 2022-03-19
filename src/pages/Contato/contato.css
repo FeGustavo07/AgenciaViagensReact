@@ -8,12 +8,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-form.form-contato {
+.form-contato {
     padding: 70px;
     width: 900px;
-    height: inherit;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,14 +26,14 @@ h1 {
     margin-bottom: 30px;
 }
 
-div.input-area {
+.input-area {
     width: 100%;
     display: flex;
     justify-content: space-between;
     height: 8%;
 }
 
-input.format-input {
+.format-input {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -104,18 +105,22 @@ textarea {
   }
 
   @media (max-width: 900px) {
-    form {
+    .form-contato {
       width: 100%;
     }
   }
 
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     div.input-area  {
       flex-direction: column;
+      align-items: center;
       height: 80px;
     }
-    input.format-input {
+    .format-input {
       width: 100%;
+    }
+    .form-contato {
+      padding: 10px;
     }
   }

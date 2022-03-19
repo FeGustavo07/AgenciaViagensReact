@@ -56,4 +56,18 @@ li span:hover {
     color: gray;
 }
 
+@media (max-width: 1100px) {
+    .mx-auto {
+        display: none;
+    }
+    #navbar--links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    li {
+        margin: 0 5px;
+    }
+}
+
 

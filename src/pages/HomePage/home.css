@@ -5,10 +5,11 @@
     padding: 0;
     margin: 0;
     height: auto;
+    overflow: hidden;
 }
 
 .banner-area {
-    width: 100%;
+    width: inherit;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,6 +19,7 @@
     padding: 0;
     margin: 0;
     background-color: #f1faee;
+    overflow: hidden;
 }
 
 .waves {
@@ -58,22 +60,6 @@
     }
 }
 
-.titles {
-    background-color: #f1faee;
-    position: absolute;
-    top: 70vh;
-    left: 50px;
-    width: 600px;
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
-    z-index: 1;
-}
-
 
 .title {
     color: #457b9d;
@@ -96,92 +82,6 @@
 .undraw {
     opacity: 0.2;
 }
-
-/* .hvr-sweep-to-right {
-    top: 55vh;
-    right: 80px;
-    width: 250px;
-    height: 70px;
-    border: none;
-    background-color: #457b9d;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: absolute;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: lightgrey;
-    border-radius: 50px;
-  }
-
-  .hvr-sweep-to-right:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #f1faee;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    
-  }
-
-  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-    color: black;
-    border: none;
-  }
-
-  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  } */
-
-/* @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 15em;
-    }
-}
-
-@keyframes blinkCursor{
-    from {
-        border-right-color: black;
-    }
-    to {
-        border-right-color: transparent;
-    }
-} */
-
-/* .typing-animation {
-    animation: blinkCursor 800ms steps(40) infinite normal, 
-    typing 6s steps(40) 1s  infinite normal both;
-}
-
-.animado {
-    border-right: 2px solid rgb(0, 0, 0);
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 2em;
-} */
-
 
 .animation--btn {
     position: absolute;
@@ -255,17 +155,25 @@
     }
    }
 
-@media (max-width: 800px) {
-    .titles {
-        width: 100%;
-        height: 258px;
-        margin: 0;
-        left: 0;
-        top: 150px;
+@media (max-width: 815px) {
+   .title, .sub-title  {
+        position: static;
+   }
+   .animation--btn {
+        top: 75vh;
+        right: calc(50% - 125px);
+   }  
+}
+
+@media (max-width: 395px) {
+    .sub-title {
+        margin-top: 0;
     }
-    .hvr-sweep-to-right {
-        right: calc(50% - 100px);
-        bottom: 200px;
+}
+
+@media (max-width: 335px) {
+    .animation--btn {
+        top: 78vh;
     }
 }
 

@@ -65,7 +65,7 @@ export default () => {
                 ? "collapse navbar-collapse show"
                 : "collapse navbar-collapse"
             }
-            id=""
+            id="navbar--links"
           >
             <div class="mx-auto"></div>
 

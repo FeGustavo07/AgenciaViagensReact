@@ -12,16 +12,15 @@ function CadastroDestino() {
 
   return (
 
-
     isAuthenticated && user.sub == "google-oauth2|102126342599734069744" && (
-    <div className='body-gerenciamentoDestino'>
+      <div className='body-gerenciamentoDestino'>
         <Cadastrar />
         <Atualizar />
         <Deletar />
         <Listar />
-    </div>
-  )
+      </div>
+    )
   )
 }
 
-export default CadastroDestino
+export default CadastroDestino;

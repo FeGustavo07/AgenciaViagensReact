@@ -1,9 +1,9 @@
 .area-informacoes {
     width: 100%;
-    height: 1000px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 500px);
+    grid-template-rows: repeat(2, auto);
     padding: 0;
     margin: 0;
 }
@@ -15,7 +15,6 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     color: white;
 }
 
@@ -81,11 +80,11 @@
     font-size: 2.5em;
 }
 
-p {
+.desc--empresa {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
-    margin: 0px 100px;
+    margin: 5px 100px;
     text-align: justify;
     margin-bottom: 5px;
 }
@@ -121,13 +120,13 @@ p {
     .descricao:nth-child(3) {
         grid-row: 3 / 4;
     }
+    .desc--empresa {
+        margin: 5px 20px;
+    }
 }
 
 @media (max-width: 450px) {
-    .titulo--primeiro,
-    .titulo--segundo {
-        margin: 0;
-    }
+   
 }
 
 

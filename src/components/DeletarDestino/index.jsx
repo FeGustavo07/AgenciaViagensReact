@@ -17,7 +17,7 @@ function excluirDestino(event) {
 
 
   return (
-    <div>
+    <div className='body-form'>
         <h2>Excluir Destino</h2>
         <form onSubmit={excluirDestino} className='form-gerenciamento'>
             <input type="number" placeholder='Id' ref={id} required />

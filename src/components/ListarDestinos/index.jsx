@@ -14,7 +14,7 @@ export default () => {
       console.log(destinos)
 
   return (
-    <div>
+    <div className='body-form'>
         <h2>Lista De Destinos</h2>
         {
             destinos?.map((destino) => (
